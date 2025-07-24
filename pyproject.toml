@@ -1,0 +1,23 @@
+[project]
+name = "axnote"
+version = "0.1.0"
+description = "Draw and edit annotations—text, arrows, and more—in Matplotlib plots within Jupyter."
+authors = [
+    {name = "Daniel Gomez"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "anywidget (>=0.9.18,<0.10.0)",
+    "matplotlib (>=3.10.3,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.30.0"
+
